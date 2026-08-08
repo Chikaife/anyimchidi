@@ -4,41 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anyim Chidi Chikaife | Software Developer</title>
-    <link icon rel="icon" href="images/chidi logo.png" type="image/x-icon">
+    <meta name="description" content="Portfolio of Anyim Chidi Chikaife — software developer focused on web experiences, product thinking, and thoughtful design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/chidi logo.png" type="image/x-icon">
     <link rel="stylesheet" href="chidi.css">
     <script src="chidi.js" defer></script>
 </head>
 <body id="home">
     <div class="page-container">
-        <header class="header">
-            <a href="#home"><div class="brand">Anyim Chidi Chikaife</div></a>
-            <details class="mobile-menu">
-                <summary class="menu-btn">☰ Menu</summary>
-                <nav>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#education">Education</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#links">Links and Resume</a>
-                    <a href="#volunteer">Volunteering</a>
-                    <a href="#photos">Gallery</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </details>
-            <nav class="desktop-nav">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#links">Links and Resume</a>
-                <a href="#volunteer">Volunteering</a>
-                <a href="#photos">Gallery</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <p id="clock" aria-live="polite" aria-label="Current time"></p>
-        </header>
+       <header class="header">
+    <a href="#home"><div class="brand">Anyim Chidi Chikaife</div></a>
+
+    <details class="mobile-menu">
+        <summary class="menu-btn">☰ Menu</summary>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#links">Links and Resume</a>
+            <a href="#volunteer">Volunteering</a>
+            <a href="#photos">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </details>
+
+    <nav class="desktop-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#links">Links and Resume</a>
+        <a href="#volunteer">Volunteering</a>
+        <a href="#photos">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+        <span class="theme-toggle__icon" id="themeIcon" aria-hidden="true">☀</span>
+        <span class="theme-toggle__text" id="themeLabel">Light</span>
+    </button>
+
+    <p id="clock" aria-live="polite" aria-label="Current time"></p>
+</header>
 
         <section class="hero">
             <div>
@@ -54,7 +66,7 @@
         <section id="education" class="panel">
             <div class="section-title">Education</div>
             <div>
-                <p><strong>Institution:</strong> Michael Okpara University of Agriculture, Umudike</p>
+                <p><strong>Institution:</strong> Michael Okpara University of Agriculture</p>
                 <p><strong>Qualification:</strong> Bachelor of Science in Computer Science</p>
                 <p><strong>Years:</strong> 2021 — 2025</p>
             </div>
@@ -132,19 +144,10 @@
                         <li class="skill-pill">React</li>
                         <li class="skill-pill">Python</li>
                         <li class="skill-pill">Responsive design</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Tools & platforms</h3>
-                    <ul class="skills-list">
-                        <li class="skill-pill">Git & Github</li>
-                        <li class="skill-pill">VS Code</li>
+                        <li class="skill-pill">Git</li>
                         <li class="skill-pill">Figma</li>
-                        <li class="skill-pill">npm</li>
-                        <li class="skill-pill">Netlify</li>
-                        <li class="skill-pill">Chrome DevTools</li>
+                        <li class="skill-pill">API Integration</li>
                     </ul>
-                </div>
             </div>
         </section>
 
@@ -160,11 +163,6 @@
                     <h3>Task Manager App</h3>
                     <p>A productivity application designed to track tasks, deadlines, and priorities with a clean user experience and accessible UI.</p>
                     <a href="https://chikaife.github.io/Task-Manager-App" target="_blank" rel="noopener noreferrer">View Project</a>
-                </article>
-                <article class="project-card">
-                    <h3>API Integration Dashboard</h3>
-                    <p>Designed and developed an analytics dashboard interface to demonstrate frontend development skills, including data visualization layouts, interactive filters, summary cards, and responsive UI design. Focused on creating a clean user experience for presenting data-driven insights.</p>
-                    <a href="https://chikaife.github.io/API-Integration-Dashboard/" target="_blank" rel="noopener noreferrer">View Project</a>
                 </article>
                 <article class="project-card">
                     <h3>beeapp Login</h3>
@@ -187,17 +185,6 @@
                         </ul>
                     </p>
                 </div>
-            </div>
-        </section>
-
-        <section id="photos" class="panel">
-            <div class="section-title">Gallery</div>
-            <div class="gallery-grid">
-                <img src="images/gallery/chidi2.jpg" alt="Portrait of Anyim Chidi with a thoughtful expression and soft lighting">
-                <img src="images/gallery/chidi potrait.jpg" alt="Headshot portrait of Anyim Chidi with a calm expression and soft lighting">
-                <img src="images/gallery/chidi and dog.jpg" alt="Gallery image showing a representative portfolio visual with modern design elements">
-                <img src="images/gallery/chidi jaro.jpg" alt="Gallery image showing a representative portfolio visual with modern design elements">
-                <img src="images/gallery/chidi mirror.jpg" alt="Gallery image showing a representative portfolio visual with modern design elements">
             </div>
         </section>
 
