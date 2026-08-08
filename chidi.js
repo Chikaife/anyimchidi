@@ -1,16 +1,57 @@
-function updateClock() {
-    const now = new Date();
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
+const themeLabel = document.getElementById("themeLabel");
+const clock = document.getElementById("clock");
 
-    const time = now.toLocaleTimeString("en-US", {
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: true
-    });
+function applyTheme(theme) {
+  document.body.setAttribute("data-theme", theme);
 
-    document.querySelector("#clock").textContent = time;
+  const isDark = theme === "dark";
+  if (themeToggle) {
+    themeToggle.setAttribute("aria-pressed", String(isDark));
+    themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+  }
+
+  if (themeIcon) {
+    themeIcon.textContent = isDark ? "☾" : "☀";
+  }
+
+  if (themeLabel) {
+    themeLabel.textContent = isDark ? "Dark" : "Light";
+  }
 }
 
+function initTheme() {
+  const savedTheme = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+  applyTheme(initialTheme);
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const currentTheme = document.body.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    localStorage.setItem("theme", currentTheme);
+    applyTheme(currentTheme);
+  });
+}
+
+function updateClock() {
+  if (!clock) return;
+
+  const now = new Date();
+  const timeString = now.toLocaleTimeString([], {
+    hour: "numeric",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true
+  });
+
+  clock.textContent = timeString;
+}
+
+initTheme();
 updateClock();
 setInterval(updateClock, 1000);
 
