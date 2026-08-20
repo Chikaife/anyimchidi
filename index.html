@@ -16,35 +16,35 @@
 <body id="home">
     <div class="page-container">
        <header class="header">
-    <a href="#home"><div class="brand">Anyim Chidi Chikaife</div></a>
+    <a class="brand" href="#home" aria-label="Anyim Chidi home"><img src="images/chidi_logo-nobg.png" alt="Anyim Chidi logo"></a>
 
     <details class="mobile-menu">
-        <summary class="menu-btn">☰ Menu</summary>
+        <summary class="menu-btn"><span aria-hidden="true">☰</span></summary>
         <nav>
-            <a href="#about">About</a>
+            <a href="about.html">About</a>
             <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
+            <a href="projects.html">Projects</a>
             <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#links">Links and Resume</a>
+            <a href="#education">Education</a>
             <a href="#volunteer">Volunteering</a>
+            <a href="#links">Links & Resume</a>
             <a href="#contact">Contact</a>
         </nav>
     </details>
 
     <nav class="desktop-nav">
-        <a href="#about">About</a>
+        <a href="about.html">About</a>
         <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
+        <a href="projects.html">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#links">Links and Resume</a>
+        <a href="#education">Education</a>
         <a href="#volunteer">Volunteering</a>
+        <a href="#links">Links & Resume</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
-        <span class="theme-toggle__icon" id="themeIcon" aria-hidden="true">☀</span>
+        <span class="theme-toggle__track" aria-hidden="true"><span class="theme-toggle__thumb" id="themeIcon"></span></span>
         <span class="theme-toggle__text" id="themeLabel">Light</span>
     </button>
 
@@ -62,58 +62,7 @@
             </div>
         </section>
 
-        <section id="education" class="panel">
-            <h2 class="section-title">Education</h2>
-            <div>
-                <p><strong>Institution:</strong> Michael Okpara University of Agriculture</p>
-                <p><strong>Qualification:</strong> Bachelor of Science in Computer Science</p>
-                <p><strong>Years:</strong> 2021 — 2025</p>
-            </div>
-        </section>
-
-        <section id="experience" class="panel">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="project-list">
-                <div class="project-card">
-                <h3><strong>Position: </strong> Software Developer Intern (Industrial Training)</h3>
-                <p><h4>Aibanc | July 2024 - October 2024</h4></p>
-                <!-- <p><strong>Date: </strong> July 2024 - October 2024 </p> -->
-                
-                    <ul>
-                        <li>Supported software development by implementing updates, fixing bugs, and improving application features.</li>
-                        <li>Tested web and mobile fintech applications, including payment and account features, to identify issues and improve reliability.</li>  
-                    </ul>
-                
-            </div>
-            
-            <div class="project-card">
-                <h3><strong>Position: </strong>Freelance Frontend Developer</h3>
-                <p><h4>Pleasant Land Nigeria Limited | July 2025 - Till Date</h4></p>
-                
-                    <ul>
-                        <li>Designed and developed a responsive corporate website using HTML, CSS, and JavaScript, creating a user-friendly interface across desktop and mobile devices.</li>
-                        <li>Implemented key features including contact forms, navigation, and performance optimizations to improve accessibility and search visibility.</li>
-                    </ul>
-                
-            </div>
-            </div>
-            
-        </section>
-
-        <section id="links" class="panel">
-            <h2 class="section-title">Links & Resume</h2>
-            <div>
-                <ul class="links-list">
-                    <li><a href="https://www.linkedin.com/in/chikaife" target="_blank" rel="noopener">LinkedIn</a></li>
-                    <li><a href="https://github.com/chikaife" target="_blank" rel="noopener">GitHub</a></li>
-                    <li><a href="https://anyimchidi.com" target="_blank" rel="noopener">Personal website</a></li>
-                    <li><a href="resume/Anyim_chidi_cv.pdf" target="_blank" rel="noopener">View Resume (PDF)</a></li>
-                    <li><a href="resume/Anyim_chidi_cv.pdf" download>Download Resume (PDF)</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="about" class="panel">
+                <section id="about" class="panel">
             <h2 class="section-title">About Me</h2>
             <div class="about-grid">
                 <div>
@@ -146,6 +95,14 @@
                         <li class="skill-pill">Git</li>
                         <li class="skill-pill">Figma</li>
                         <li class="skill-pill">API Integration</li>
+                        <li class="skill-pill" aria-hidden="true">HTML & CSS</li>
+                        <li class="skill-pill" aria-hidden="true">JavaScript</li>
+                        <li class="skill-pill" aria-hidden="true">React</li>
+                        <li class="skill-pill" aria-hidden="true">Python</li>
+                        <li class="skill-pill" aria-hidden="true">Responsive design</li>
+                        <li class="skill-pill" aria-hidden="true">Git</li>
+                        <li class="skill-pill" aria-hidden="true">Figma</li>
+                        <li class="skill-pill" aria-hidden="true">API Integration</li>
                     </ul>
                 </div>
             </div>
@@ -154,23 +111,62 @@
         <section id="projects" class="panel">
             <h2 class="section-title">Projects</h2>
             <div class="project-list">
-                <article class="project-card">
+                <article class="project-card" id="portfolio-website">
                     <h3>Portfolio Website</h3>
                     <p>A modern personal website built with responsive HTML, CSS, and interactive JavaScript to showcase skills, projects, and contact details.</p>
                     <a href="https://anyimchidi.com" target="_blank" rel="noopener noreferrer">View Project</a>
                 </article>
-                <article class="project-card">
+                <article class="project-card" id="task-manager">
                     <h3>Task Manager App</h3>
                     <p>A productivity application designed to track tasks, deadlines, and priorities with a clean user experience and accessible UI.</p>
                     <a href="https://chikaife.github.io/Task-Manager-App" target="_blank" rel="noopener noreferrer">View Project</a>
                 </article>
-                <article class="project-card">
-                    <h3>beeapp Login</h3>
-                    <p>Designed and developed a modern login page prototype for BeeApp, an application concept focused on clean UI design, responsive layouts, and user-friendly interface elements.</p>
+                <article class="project-card" id="beeapp">
+                    <h3>beeapp</h3>
+                    <p>beeapp is a personal fintech UI project designed to showcase a seamless experience for managing airtime, data, bill payments, gift cards, and flight bookings in one place.</p>
                     <a href="https://chikaife.github.io/beeapp/" target="_blank" rel="noopener noreferrer">View Project</a>
                 </article>
             </div>
         </section>
+
+        <section id="experience" class="panel">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="project-list">
+                <div class="project-card">
+                <h3><strong>Position: </strong> Software Developer Intern (Industrial Training)</h3>
+                <p><h4>Aibanc | July 2024 - October 2024</h4></p>
+                <!-- <p><strong>Date: </strong> July 2024 - October 2024 </p> -->
+                
+                    <ul>
+                        <li>Supported software development by implementing updates, fixing bugs, and improving application features.</li>
+                        <li>Tested web and mobile fintech applications, including payment and account features, to identify issues and improve reliability.</li>  
+                    </ul>
+                
+            </div>
+            
+            <div class="project-card">
+                <h3><strong>Position: </strong>Freelance Frontend Developer</h3>
+                <p><h4>Pleasant Land Nigeria Limited | July 2025 - Till Date</h4></p>
+                
+                    <ul>
+                        <li>Designed and developed a responsive corporate website using HTML, CSS, and JavaScript, creating a user-friendly interface across desktop and mobile devices.</li>
+                        <li>Implemented key features including contact forms, navigation, and performance optimizations to improve accessibility and search visibility.</li>
+                    </ul>
+                
+            </div>
+            </div>
+            
+        </section>
+
+        <section id="education" class="panel">
+            <h2 class="section-title">Education</h2>
+            <div>
+                <p><strong>Institution:</strong> Michael Okpara University of Agriculture</p>
+                <p><strong>Qualification:</strong> Bachelor of Science in Computer Science</p>
+                <p><strong>Years:</strong> 2021 — 2025</p>
+            </div>
+        </section>
+
 
         <section id="volunteer" class="panel">
             <h2 class="section-title">Volunteering</h2>
@@ -187,6 +183,20 @@
                 </div>
             </div>
         </section>
+
+        <section id="links" class="panel">
+            <h2 class="section-title">Links & Resume</h2>
+            <div>
+                <ul class="links-list">
+                    <li><a href="https://www.linkedin.com/in/chikaife" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://github.com/chikaife" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://anyimchidi.com" target="_blank" rel="noopener">Personal website</a></li>
+                    <li><a href="resume/Anyim_chidi_cv.pdf" target="_blank" rel="noopener">View Resume (PDF)</a></li>
+                    <li><a href="resume/Anyim_chidi_cv.pdf" download>Download Resume (PDF)</a></li>
+                </ul>
+            </div>
+        </section>
+
 
         <section id="contact" class="panel">
             <h2 class="section-title">Contact</h2>
@@ -211,7 +221,7 @@
 
         <footer>
             <span>© 2026 Anyim Chidi. All rights reserved.</span>
-            <span class="gallery-grid"><img src="images/chidi logo.png" alt="Logo of Anyim Chidi"></span>
+            <span class="gallery-grid"><img src="images/chidi_logo.png" alt="Logo of Anyim Chidi"></span>
             <nav><a href="mailto:hello@anyimchidi.com">Email</a>
             <a href="https://www.linkedin.com/in/chikaife" target="_blank" rel="noopener noreferrer">LinkedIn</a></nav>
         </footer>
