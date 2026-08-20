@@ -717,10 +717,6 @@ body[data-theme="dark"] .page-intro {
   background: linear-gradient(135deg, var(--surface-strong) 0%, rgba(38, 74, 57, 0.85) 100%);
 }
 
-body[data-theme="dark"] .image-slot {
-  background: rgba(255, 255, 255, 0.06);
-}
-
 body[data-theme="dark"] .signal,
 body[data-theme="dark"] .case-study {
   border-color: var(--border);
