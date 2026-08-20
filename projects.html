@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Anyim Chidi</title>
+    <meta name="description" content="Selected web projects by Anyim Chidi, including a portfolio website, task manager, and fintech interface.">
+    <link rel="canonical" href="https://anyimchidi.com/projects.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/chidi logo.png" type="image/png">
+    <link rel="stylesheet" href="chidi.css">
+    <script src="chidi.js" defer></script>
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <a class="brand" href="index.html" aria-label="Anyim Chidi home"><img src="images/chidi_logo-nobg.png" alt="Anyim Chidi logo"></a>
+            <details class="mobile-menu">
+                <summary class="menu-btn"><span aria-hidden="true">&#9776;</span></summary>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="index.html#experience">Experience</a>
+                    <a href="index.html#contact">Contact</a>
+                </nav>
+            </details>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="index.html#experience">Experience</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+                <span class="theme-toggle__track" aria-hidden="true"><span class="theme-toggle__thumb" id="themeIcon"></span></span>
+                <span class="theme-toggle__text" id="themeLabel">Light</span>
+            </button>
+            <p id="clock" aria-live="polite" aria-label="Current time"></p>
+        </header>
+
+        <main>
+            <section class="panel page-intro">
+                <div>
+                    <p class="eyebrow">Selected work</p>
+                    <h1>Ideas, turned into useful things.</h1>
+                    <p>These projects are small windows into how I think: start with a real need, make the experience understandable, then keep refining until the product feels natural to use.</p>
+                </div>
+                <div class="image-slot3" aria-label="Image placeholder for a project collage">
+                </div>
+            </section>
+
+            <section class="panel page-panel">
+                <p class="eyebrow">The work, with the why included</p>
+                <div class="project-showcase">
+                    <article class="case-study">
+                        <div class="case-study__visual" style="background-image: url('images/anyimchidi-image.jpg');" role="img" aria-label="Preview of the portfolio website"></div>
+                        <div>
+                            <p class="eyebrow">01 / Personal platform</p>
+                            <h2>Portfolio Website</h2>
+                            <p>This site is designed as more than a resume. It brings together my story, skills, projects, experience, and contact details in one calm, responsive space.</p>
+                            <p>The focus was on a flexible visual system, accessible navigation, theme switching, and a layout that can grow as the work grows.</p>
+                            <ul class="case-study__meta"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive UI</li></ul>
+                            <a class="button-secondary" href="https://anyimchidi.com" target="_blank" rel="noopener noreferrer">Open project</a>
+                        </div>
+                    </article>
+
+                    <article class="case-study">
+                        <div class="case-study__visual" style="background-image: url('images/task-manager-image.jpg');" role="img" aria-label="Preview of the Task Manager App"></div>
+                        <div>
+                            <p class="eyebrow">02 / Focus and follow-through</p>
+                            <h2>Task Manager App</h2>
+                            <p>A productivity app for tracking tasks, deadlines, and priorities without making planning feel heavy. The interface keeps the next action visible and the overall workload easy to scan.</p>
+                            <p>Its value is in the everyday details: clear hierarchy, quick recognition, and a workflow that supports progress instead of adding friction.</p>
+                            <ul class="case-study__meta"><li>Productivity</li><li>Task flows</li><li>UI design</li><li>Web app</li></ul>
+                            <a class="button-secondary" href="https://chikaife.github.io/Task-Manager-App" target="_blank" rel="noopener noreferrer">Open project</a>
+                        </div>
+                    </article>
+
+                    <article class="case-study">
+                        <div class="case-study__visual" style="background-image: url('images/beeapp-image.jpg');" role="img" aria-label="Preview of the beeapp fintech interface"></div>
+                        <div>
+                            <p class="eyebrow">03 / Everyday finance</p>
+                            <h2>beeapp</h2>
+                            <p>beeapp explores a single, seamless home for airtime, data, bill payments, gift cards, and flight bookings. It treats a busy fintech dashboard as a place for confidence, not confusion.</p>
+                            <p>The project gave me room to think about grouping, trust, visual rhythm, and how many useful actions can share one experience without competing for attention.</p>
+                            <ul class="case-study__meta"><li>Fintech UI</li><li>Information architecture</li><li>Responsive design</li><li>Figma</li></ul>
+                            <a class="button-secondary" href="https://chikaife.github.io/beeapp/" target="_blank" rel="noopener noreferrer">Open project</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="panel story-grid">
+                <div>
+                    <p class="eyebrow">Next chapter</p>
+                    <h2>There is always another useful problem to solve.</h2>
+                </div>
+                <div>
+                    <p>I am continuing to grow across frontend and backend development, with a particular interest in products that make complex tasks feel simple. The next project might start as a sketch, a conversation, or an annoying problem that deserves a better tool.</p>
+                    <a class="button" href="index.html#contact">Start a conversation</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <span>© 2026 Anyim Chidi. All rights reserved.</span>
+            <span class="gallery-grid"><img src="images/chidi_logo.png" alt="Logo of Anyim Chidi"></span>
+            <nav><a href="mailto:hello@anyimchidi.com">Email</a><a href="https://github.com/chikaife" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+        </footer>
+    </div>
+</body>
+</html>
