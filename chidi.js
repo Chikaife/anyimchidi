@@ -12,10 +12,6 @@ function applyTheme(theme) {
     themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
   }
 
-  if (themeIcon) {
-    themeIcon.textContent = isDark ? "☾" : "☀";
-  }
-
   if (themeLabel) {
     themeLabel.textContent = isDark ? "Dark" : "Light";
   }
@@ -55,14 +51,10 @@ initTheme();
 updateClock();
 setInterval(updateClock, 1000);
 
-document.querySelectorAll(".mobile-menu a").forEach(link => {
-    link.addEventListener("click", () => {
-        document.querySelector(".mobile-menu").removeAttribute("open");
-    });
-});
+const contactForm = document.getElementById('contactForm');
 
-    
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
@@ -78,7 +70,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     status.style.color = '#8bffa8';
 
     console.log({ name, email, message });
-});
+    });
+}
 
 const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
 smoothScrollLinks.forEach(link => {
@@ -88,6 +81,7 @@ smoothScrollLinks.forEach(link => {
         if (!target) return;
         event.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        document.querySelector(".mobile-menu")?.removeAttribute("open");
         if (history.replaceState) {
             history.replaceState(null, '', `#${targetId}`);
         }
