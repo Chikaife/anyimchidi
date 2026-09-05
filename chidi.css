@@ -164,6 +164,17 @@ body[data-theme="dark"] .header {
   transition: color 2s ease, transform 2s ease;
 }
 
+.drop-content a{
+  display: block;
+}
+.drop-content{
+  display: none;
+}
+
+.drop-content:hover{
+  display: block;
+}
+
 .brand img {
   width: 100%;
   height: 100%;
@@ -336,6 +347,17 @@ body[data-theme="dark"] .hero {
   gap: 12px;
 }
 
+.scroll-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.1s ease, transform 0.8s ease;
+}
+
+.scroll-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* ================================
    Buttons
 ================================ */
@@ -424,6 +446,11 @@ body[data-theme="dark"] .panel {
   background: var(--surface-strong);
   border: 1px solid rgba(31, 28, 25, 0.06);
   box-shadow: 0 8px 18px rgba(17, 24, 39, 0.03);
+  transition: 180ms ease-in-out all
+}
+
+.project-card:hover{
+  transform: scaleX(1.05);
 }
 
 body[data-theme="dark"] .project-card {
@@ -717,6 +744,7 @@ body[data-theme="dark"] .page-intro {
   background: linear-gradient(135deg, var(--surface-strong) 0%, rgba(38, 74, 57, 0.85) 100%);
 }
 
+
 body[data-theme="dark"] .signal,
 body[data-theme="dark"] .case-study {
   border-color: var(--border);
@@ -815,7 +843,7 @@ body[data-theme="dark"] .links-list a {
 
 #portfolio-website:hover{
   background-size: 110%;
-  transform: scale(1.12);
+  transform: scale(1.05);
 }
 #task-manager{
   background-image: url("images/task-manager-image.jpg");
@@ -824,7 +852,7 @@ body[data-theme="dark"] .links-list a {
 }
 #task-manager:hover{
   background-size: 110%;
-  transform: scale(1.12);
+  transform: scale(1.05);
 }
 
 #beeapp{
@@ -834,7 +862,7 @@ body[data-theme="dark"] .links-list a {
 }
 #beeapp:hover{
   background-size: 110%;
-  transform: scale(1.12);
+  transform: scale(1.05);
 }
 
 #projects .project-card {
@@ -966,41 +994,51 @@ footer a:focus-visible {
 /* ================================
    Mobile Menu
 ================================ */
-
 .mobile-menu {
-  display: none;
+    display: none;
 }
 
 .mobile-menu summary {
-  cursor: pointer;
-  list-style: none;
-  font-weight: 600;
-  color: var(--accent-strong);
-  padding: 8px 12px;
-  border-radius: 999px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    color: var(--accent-strong);
+    padding: 8px 12px;
+    border-radius: 999px;
 }
 
 .mobile-menu summary::-webkit-details-marker {
-  display: none;
+    display: none;
+}
+
+.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
 }
 
 .mobile-menu nav a {
-  padding: 8px 10px;
-  border-radius: 10px;
-  color: var(--bg);
-  background: transparent;
-  border: 1px solid var(--border);
-  font-size: 1.25rem;
-  border-bottom: 1px solid var(--border);
-  transition: all 0.5s ease-in-out;
+    display: block;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: var(--bg);
+    background: transparent;
+    border: 1px solid var(--border);
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background 0.25s ease,
+                color 0.25s ease,
+                transform 0.25s ease;
 }
 
 .mobile-menu nav a:hover,
 .mobile-menu nav a:focus-visible {
-  background: var(--accent-soft);
-  color: var(--accent-strong);
-  transform: scale(1.1);
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    transform: translateX(4px);
 }
+
 
 /* ================================
    Responsive
@@ -1014,6 +1052,12 @@ footer a:focus-visible {
   .project-list {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 600px) {
+    .responsive-animate {
+        transition: none;
+    }
 }
 
 @media (max-width: 760px) {
