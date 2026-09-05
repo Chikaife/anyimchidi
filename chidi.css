@@ -164,17 +164,6 @@ body[data-theme="dark"] .header {
   transition: color 2s ease, transform 2s ease;
 }
 
-.drop-content a{
-  display: block;
-}
-.drop-content{
-  display: none;
-}
-
-.drop-content:hover{
-  display: block;
-}
-
 .brand img {
   width: 100%;
   height: 100%;
