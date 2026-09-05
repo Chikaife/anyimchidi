@@ -1054,12 +1054,6 @@ footer a:focus-visible {
   }
 }
 
-@media (max-width: 600px) {
-    .responsive-animate {
-        transition: none;
-    }
-}
-
 @media (max-width: 760px) {
   .page-container {
     padding: 16px 16px 48px;
