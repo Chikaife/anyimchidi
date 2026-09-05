@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="images/chidi logo.png" type="image/png">
-    <link rel="stylesheet" href="chidi.css">
+    <link rel="stylesheet" href="chidi.css"> 
     <script src="chidi.js" defer></script>
 </head>
 <body id="home">
@@ -18,29 +18,33 @@
        <header class="header">
     <a class="brand" href="https://anyimchidi.com" aria-label="Anyim Chidi home"><img src="images/chidi_logo-nobg.png" alt="Anyim Chidi logo"></a>
 
-    <details class="mobile-menu">
-        <summary class="menu-btn"><span aria-hidden="true">☰</span></summary>
-        <nav>
-            <a href="https://anyimchidi.com/about">About</a>
-            <a href="https://anyimchidi.com/#skills">Skills</a>
-            <a href="https://anyimchidi.com/projects">Projects</a>
-            <a href="https://anyimchidi.com/#experience">Experience</a>
-            <a href="https://anyimchidi.com/#education">Education</a>
-            <a href="https://anyimchidi.com/#volunteer">Volunteering</a>
-            <a href="https://anyimchidi.com/#links">Links & Resume</a>
-            <a href="https://anyimchidi.com/#contact">Contact</a>
-        </nav>
-    </details>
+<details class="mobile-menu">
+    <summary class="menu-btn">
+        <span class="menu-icon" aria-hidden="true">☰</span>
+        <span class="menu-label">Menu</span>
+    </summary>
+
+    <nav class="drop-content" aria-label="Mobile navigation">
+        <a href="/about">About</a>
+        <a href="/#skills">Skills</a>
+        <a href="/projects">Projects</a>
+        <a href="/#experience">Experience</a>
+        <a href="/#education">Education</a>
+        <a href="/#volunteer">Volunteering</a>
+        <a href="/#links">Links & Resume</a>
+        <a href="/#contact">Contact</a>
+    </nav>
+</details>
 
     <nav class="desktop-nav">
-        <a href="https://anyimchidi.com/about">About</a>
-        <a href="https://anyimchidi.com/#skills">Skills</a>
-        <a href="https://anyimchidi.com/projects">Projects</a>
-        <a href="https://anyimchidi.com/#experience">Experience</a>
-        <a href="https://anyimchidi.com/#education">Education</a>
-        <a href="https://anyimchidi.com/#volunteer">Volunteering</a>
-        <a href="https://anyimchidi.com/#links">Links & Resume</a>
-        <a href="https://anyimchidi.com/#contact">Contact</a>
+        <a href="/about">About</a>
+        <a href="/#skills">Skills</a>
+        <a href="/projects">Projects</a>
+        <a href="/#experience">Experience</a>
+        <a href="/#education">Education</a>
+        <a href="/#volunteer">Volunteering</a>
+        <a href="/#links">Links & Resume</a>
+        <a href="/#contact">Contact</a>
     </nav>
 
     <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
@@ -51,18 +55,18 @@
     <p id="clock" aria-live="polite" aria-label="Current time"></p>
 </header>
 
-        <section class="hero">
+        <section class="hero scroll-item">
             <div>
                 <h1>Hi, I’m Chidi. I build modern experiences for the web.</h1>
                 <p>I’m a tech enthusiast who loves programming, design systems, and creating accessible digital products. Explore my work, skills, and how we can collaborate.</p>
                 <div class="hero-actions">
-                    <a class="button" href="https://anyimchidi.com/projects">View Projects</a>
+                    <a class="button" href="#projects">View Projects</a>
                     <a class="button-secondary" href="#contact">Get in Touch</a>
                 </div>
             </div>
         </section>
 
-                <section id="about" class="panel">
+                <section id="about" class="panel scroll-item">
             <h2 class="section-title">About Me</h2>
             <div class="about-grid">
                 <div>
@@ -81,7 +85,7 @@
             </div>
         </section>
 
-        <section id="skills" class="panel">
+        <section id="skills" class="panel scroll-item">
             <h2 class="section-title">Skills</h2>
             <div class="grid">
                 <div>
@@ -108,20 +112,20 @@
             </div>
         </section>
 
-        <section id="projects" class="panel">
+        <section id="projects" class="panel scroll-item">
             <h2 class="section-title">Projects</h2>
             <div class="project-list">
-                <article class="project-card" id="portfolio-website">
+                <article class="project-card scroll-item" id="portfolio-website">
                     <h3>Portfolio Website</h3>
                     <p>A modern personal website built with responsive HTML, CSS, and interactive JavaScript to showcase skills, projects, and contact details.</p>
                     <a href="https://anyimchidi.com" target="_blank" rel="noopener noreferrer">View Project</a>
                 </article>
-                <article class="project-card" id="task-manager">
+                <article class="project-card scroll-item" id="task-manager">
                     <h3>Task Manager App</h3>
                     <p>A productivity application designed to track tasks, deadlines, and priorities with a clean user experience and accessible UI.</p>
                     <a href="https://chikaife.github.io/Task-Manager-App" target="_blank" rel="noopener noreferrer">View Project</a>
                 </article>
-                <article class="project-card" id="beeapp">
+                <article class="project-card scroll-item" id="beeapp">
                     <h3>beeapp</h3>
                     <p>beeapp is a personal fintech UI project designed to showcase a seamless experience for managing airtime, data, bill payments, gift cards, and flight bookings in one place.</p>
                     <a href="https://chikaife.github.io/beeapp/" target="_blank" rel="noopener noreferrer">View Project</a>
@@ -129,7 +133,7 @@
             </div>
         </section>
 
-        <section id="experience" class="panel">
+        <section id="experience" class="panel scroll-item">
             <h2 class="section-title">Work Experience</h2>
             <div class="project-list">
                 <div class="project-card">
@@ -158,7 +162,7 @@
             
         </section>
 
-        <section id="education" class="panel">
+        <section id="education" class="panel scroll-item">
             <h2 class="section-title">Education</h2>
             <div>
                 <p><strong>Institution:</strong> Michael Okpara University of Agriculture</p>
@@ -168,7 +172,7 @@
         </section>
 
 
-        <section id="volunteer" class="panel">
+        <section id="volunteer" class="panel scroll-item">
             <h2 class="section-title">Volunteering</h2>
             <div class="project-list">
                 <div class="project-card">
@@ -184,7 +188,7 @@
             </div>
         </section>
 
-        <section id="links" class="panel">
+        <section id="links" class="panel scroll-item">
             <h2 class="section-title">Links & Resume</h2>
             <div>
                 <ul class="links-list">
@@ -198,7 +202,7 @@
         </section>
 
 
-        <section id="contact" class="panel">
+        <section id="contact" class="panel scroll-item">
             <h2 class="section-title">Contact</h2>
             <p class="form-note">Have a question or project in mind? Send a message below.</p>
             <form class="contact-form" id="contactForm" action="https://formspree.io/f/xzdljooe" method="POST">
@@ -219,7 +223,7 @@
             </form>
         </section>
 
-        <footer>
+        <footer class="scroll-item">
             <span>© 2026 Anyim Chidi. All rights reserved.</span>
             <span class="gallery-grid"><img src="images/chidi_logo.png" alt="Logo of Anyim Chidi"></span>
             <nav><a href="mailto:hello@anyimchidi.com">Email</a>
