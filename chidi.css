@@ -339,7 +339,7 @@ body[data-theme="dark"] .hero {
 .scroll-item {
     opacity: 0;
     transform: translateY(40px);
-    transition: opacity 1.1s ease, transform 0.8s ease;
+    transition: opacity 1s ease, transform 0.8s ease;
 }
 
 .scroll-item.show {
