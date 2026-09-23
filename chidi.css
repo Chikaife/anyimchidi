@@ -890,8 +890,8 @@ body[data-theme="dark"] .case-study {
   background-image: url(/images/nacos.webp);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.1;
+  background-size: cover;
+  opacity: 0.08;
   transition: 0.3s all ease-in-out;
 }
 #nacos:hover::before{
@@ -921,8 +921,8 @@ opacity: 0.3;
   background-image: url(/images/aibanc.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.1;
+  background-size: cover;
+  opacity: 0.08;
   transition: 0.3s all ease-in-out;
 }
 #aibanc:hover::before{
@@ -952,8 +952,8 @@ opacity: 0.3;
   background-image: url(/images/pleasant-land.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.1;
+  background-size: cover;
+  opacity: 0.08;
   transition: 0.3s all ease-in-out;
 }
 #pleasant-land:hover::before{
@@ -968,7 +968,7 @@ opacity: 0.3;
 #github,
 #chidi,
 #cv-view,
-#cv-download {
+#cv-download, #cv-download2 {
     position: relative;
     width: 100%;
     height: 100%;
@@ -980,18 +980,20 @@ opacity: 0.3;
     color: rgb(12, 10, 10);
     overflow: hidden;
     isolation: isolate;
-}
-
+    border-radius: 20px;
+  }
+  
 #linkedin::before,
 #github::before,
 #chidi::before,
 #cv-view::before,
-#cv-download::before {
+#cv-download::before, #cv-download2::before {
     content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
-
+    
+    
     background-position: center;
     background-repeat: no-repeat;
 
@@ -1006,7 +1008,7 @@ opacity: 0.3;
 
 #github::before {
     background-image: url("/images/github.webp");
-    background-size: contain;
+    background-size: cover;
 }
 
 #chidi::before {
@@ -1021,10 +1023,14 @@ opacity: 0.3;
 
 #cv-download::before {
     background-image: url("/images/download_cv.webp");
+    background-size: cover;
+}
+#cv-download2::before {
+    background-image: url("/images/download_cv.webp");
     background-size: contain;
 }
 
-#linkedin:hover::before, #github:hover::before, #chidi:hover::before, #cv-view:hover::before, #cv-download:hover::before{
+#linkedin:hover::before, #github:hover::before, #chidi:hover::before, #cv-view:hover::before, #cv-download:hover::before, #cv-download2:hover::before{
   opacity: 0.5;
 }
 
@@ -1032,7 +1038,8 @@ body[data-theme="dark"] #linkedin,
 body[data-theme="dark"] #github,
 body[data-theme="dark"] #chidi,
 body[data-theme="dark"] #cv-view,
-body[data-theme="dark"] #cv-download {
+body[data-theme="dark"] #cv-download,
+body[data-theme="dark"] #cv-download2 {
   color: floralwhite;
 }
 
