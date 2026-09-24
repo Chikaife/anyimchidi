@@ -540,14 +540,17 @@ body[data-theme="dark"] .project-card {
 
 .project-card a {
   display: inline-block;
+  width: fit-content;
   margin-top: 14px;
-  color: var(--accent);
-  font-weight: 600;
+  color: rgb(14, 13, 13);
+  font-weight: bolder;
 }
 
 .project-card a:hover,
 .project-card a:focus-visible {
-  text-decoration: underline;
+   text-decoration: none;
+  /* text-underline-offset: 6px; */
+  /* text-shadow: 0 0 8px rgba(255, 0, 127, 0.6); */
 }
 
 /* ================================
@@ -680,7 +683,7 @@ body[data-theme="dark"] .project-card {
   background: rgba(255, 255, 255, 0.28);
   color: var(--muted);
   text-align: center;
-  background-image: url("images/chidi_logo-nobg.png");
+  background-image: url("images/chidi_logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -711,8 +714,9 @@ body[data-theme="dark"] .project-card {
   margin: 0;
   padding: 24px;
   border-left: 4px solid var(--accent);
-  background: var(--accent-soft);
-  color: var(--accent-strong);
+  border-radius: 15px;
+  background: rgb(21, 24, 22);
+  color: floralwhite;
   font-family: "Manrope", "Inter", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
@@ -720,15 +724,17 @@ body[data-theme="dark"] .project-card {
 }
 
 .signal-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
 }
 
 .signal {
   min-height: 150px;
   padding: 20px;
-  border-top: 3px solid var(--accent);
+  border: 3px solid var(--accent);
+  border-radius: 20px;
   background: var(--surface-strong);
 }
 
@@ -788,8 +794,8 @@ body[data-theme="dark"] .project-card {
 .case-study__meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  padding: 0;
+  gap: 10px;
+  padding: 10px;
   margin: 18px 0 0;
   list-style: none;
 }
@@ -804,7 +810,7 @@ body[data-theme="dark"] .project-card {
 }
 
 body[data-theme="dark"] .page-intro {
-  background: linear-gradient(135deg, var(--surface-strong) 0%, rgba(38, 74, 57, 0.85) 100%);
+  background: linear-gradient(135deg, var(--surface-strong) 0%, rgba(12, 24, 18, 0.85) 100%);
 }
 
 
