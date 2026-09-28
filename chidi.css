@@ -1094,7 +1094,7 @@ body[data-theme="dark"] .last-link a {
 
 /* Projects */
 #portfolio-website{
-  background-image: url("images/anyimchidi-image.jpg");
+  background-image: url("images/anyimchidi-image.png");
   background-size: cover;
   transition: all 0.3s ease-in-out;
 }
@@ -1104,7 +1104,7 @@ body[data-theme="dark"] .last-link a {
   transform: scale(1.05);
 }
 #task-manager{
-  background-image: url("images/task-manager-image.jpg");
+  background-image: url("images/task-manager-image.png");
   background-size: 100%;
   transition: all 0.3s ease-in-out;
 }
@@ -1114,7 +1114,7 @@ body[data-theme="dark"] .last-link a {
 }
 
 #beeapp{
-  background-image: url("images/beeapp-image.jpg");
+  background-image: url("images/beeapp-image.png");
   background-size: cover;
   transition: all 0.3s ease-in-out;
 }
