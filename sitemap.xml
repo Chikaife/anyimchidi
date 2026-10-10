@@ -6,11 +6,16 @@
     </url>
 
     <url>
-        <loc>https://anyimchidi.com/about/</loc>
+        <loc>https://anyimchidi.com/shop/</loc>
     </url>
 
     <url>
+        <loc>https://anyimchidi.com/about/</loc>
+    </url>
+    
+    <url>
         <loc>https://anyimchidi.com/projects/</loc>
     </url>
+
 
 </urlset>
