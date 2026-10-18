@@ -51,13 +51,32 @@ initTheme();
 updateClock();
 setInterval(updateClock, 1000);
 
-const mobileMenu = document.querySelector(".mobile-menu");
+const mobileNav = document.getElementById("mobileNav");
+const menuToggle = document.getElementById("menuToggle");
 
-mobileMenu?.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-        mobileMenu.removeAttribute("open");
-    });
-});
+if (mobileNav && menuToggle) {
+  const closeMobileNav = () => {
+    mobileNav.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.classList.remove("is-open");
+  };
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mobileNav.classList.toggle("is-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.classList.toggle("is-open", isOpen);
+  });
+
+  mobileNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", closeMobileNav);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!mobileNav.contains(event.target) && !menuToggle.contains(event.target)) {
+      closeMobileNav();
+    }
+  });
+}
 
 const contactForm = document.getElementById('contactForm');
 

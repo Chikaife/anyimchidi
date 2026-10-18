@@ -48,32 +48,37 @@
     <div class="page-container">
         <header class="header">
             <a class="brand" href="https://anyimchidi.com" aria-label="Anyim Chidi home"><img src="images/chidi_logo-nobg.png" alt="Anyim Chidi logo"></a>
-            <details class="mobile-menu">
-                <summary class="menu-btn">
-                    <span aria-hidden="true">&#9776;</span>
-                    <span class="menu-label">Menu</span>
-                </summary>
-                <nav>
-                    <a href="https://anyimchidi.com">Home</a>
-                    <a href="/about" >About</a>
-                    <a href="/projects">Projects</a>
-                    <a href="/#experience">Experience</a>
-                    <a href="/#contact">Contact</a>
-                </nav>
-            </details>
+
             <nav class="desktop-nav" aria-label="Main navigation">
-                <a href="https://anyimchidi.com">Home</a>
+                <a href="/">Home</a>
                 <a href="/about" aria-current="page">About</a>
                 <a href="/projects">Projects</a>
                 <a href="/#experience">Experience</a>
                 <a href="/#contact">Contact</a>
             </nav>
-            <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
-                <span class="theme-toggle__track" aria-hidden="true"><span class="theme-toggle__thumb" id="themeIcon"></span></span>
-                <span class="theme-toggle__text" id="themeLabel">Light</span>
-            </button>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+                    <span class="theme-toggle__track" aria-hidden="true"><span class="theme-toggle__thumb" id="themeIcon"></span></span>
+                    <span class="theme-toggle__text" id="themeLabel">Light</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
             <p id="clock" aria-live="polite" aria-label="Current time"></p>
         </header>
+
+        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+            <a href="https://anyimchidi.com">Home</a>
+            <a href="/about" aria-current="page">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/#experience">Experience</a>
+            <a href="/#contact">Contact</a>
+        </nav>
 
         <main>
             <section class="panel page-intro scroll-item">
@@ -82,6 +87,11 @@
                     <h1>Curious by nature. Practical by craft.</h1>
                     <p>I’m Anyim Chidi, a Computer Science graduate and software developer from Lagos, Nigeria. I enjoy turning ideas into digital experiences that are clear, useful, and easy to use.</p>
                     <p>I’m interested in building reliable software, improving user experiences, and finding better ways to solve problems through technology.</p>
+                    <div class="about-spotlight">
+                        <span>Based in Lagos</span>
+                        <span>Frontend + product thinking</span>
+                        <span>Building useful things</span>
+                    </div>
                 </div>
                 <div class="image-slot scroll-item" aria-label="Image placeholder for a portrait or workspace photo">
                 </div>
