@@ -21,6 +21,9 @@
   --radius-md: 22px;
   --radius-sm: 14px;
   --max-width: 1200px;
+  --font-body: "Satoshi", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-ui: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", ui-sans-serif, sans-serif;
 }
 
 body[data-theme="dark"] {
@@ -52,7 +55,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
   color: var(--text);
   background:
     radial-gradient(circle at top left, rgba(203, 158, 92, 0.16), transparent 28%),
@@ -102,7 +105,26 @@ body::after {
 
 a {
   color: inherit;
+  font-family: var(--font-ui);
+  font-weight: 500;
   text-decoration: none;
+}
+
+button,
+.button,
+.button-secondary {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
 }
 
 img {
@@ -327,7 +349,7 @@ body[data-theme="dark"] .hero {
 
 .hero h1 {
   margin: 0 0 18px;
-  font-family: "Manrope", "Inter", sans-serif;
+  font-family: var(--font-display);
   font-size: clamp(3.1rem, 5vw, 6rem);
   line-height: 0.92;
   letter-spacing: -0.08em;
@@ -454,7 +476,7 @@ body[data-theme="dark"] .panel {
 
 .section-title {
   margin-bottom: 20px;
-  font-family: "Manrope", "Inter", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -512,7 +534,7 @@ body[data-theme="dark"] .project-card {
 .project-card h3,
 .project-card h4 {
   margin: 0 0 10px;
-  font-family: "Manrope", "Inter", sans-serif;
+  font-family: var(--font-display);
   color: var(--accent-strong);
 }
 
@@ -559,7 +581,7 @@ body[data-theme="dark"] .project-card {
 .profile-visual h2 {
   margin-top: 0;
   margin-bottom: 8px;
-  font-family: "Manrope", "Inter", sans-serif;
+  font-family: var(--font-display);
   font-size: 1.1rem;
   color: var(--accent-strong);
 }
@@ -589,7 +611,7 @@ body[data-theme="dark"] .project-card {
 .page-intro h1 {
   max-width: 760px;
   margin: 0 0 18px;
-  font-family: "Manrope", "Inter", sans-serif;
+  font-family: var(--font-display);
   font-size: clamp(2.4rem, 6vw, 5.4rem);
   line-height: 0.98;
   color: var(--accent-strong);
@@ -617,8 +639,9 @@ body[data-theme="dark"] .project-card {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.22);
   color: var(--text-strong);
+  font-family: var(--font-ui);
   font-size: 0.76rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -626,8 +649,9 @@ body[data-theme="dark"] .project-card {
 .eyebrow {
   margin: 0 0 14px;
   color: var(--accent);
+  font-family: var(--font-ui);
   font-size: 0.78rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
@@ -713,7 +737,7 @@ body[data-theme="dark"] .project-card {
 .story-grid h2,
 .page-panel h2 {
   margin-top: 0;
-  font-family: "Manrope", "Inter", sans-serif;
+  font-family: var(--font-display);
   color: var(--accent-strong);
 }
 
@@ -724,7 +748,7 @@ body[data-theme="dark"] .project-card {
   border-radius: 15px;
   background: rgb(21, 24, 22);
   color: floralwhite;
-  font-family: "Manrope", "Inter", sans-serif;
+  font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.3;
@@ -749,7 +773,7 @@ body[data-theme="dark"] .project-card {
   display: block;
   margin-bottom: 8px;
   color: var(--accent-strong);
-  font-family: "Manrope", "Inter", sans-serif;
+  font-family: var(--font-ui);
 }
 
 .signal span {
@@ -795,6 +819,7 @@ body[data-theme="dark"] .project-card {
 
 .case-study h2 {
   margin-bottom: 12px;
+  font-family: var(--font-display);
   font-size: clamp(1.5rem, 3vw, 2.3rem);
 }
 
@@ -812,8 +837,10 @@ body[data-theme="dark"] .project-card {
   border-radius: 999px;
   background: var(--accent-soft);
   color: var(--accent-strong);
+  font-family: var(--font-ui);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 0.015em;
 }
 
 body[data-theme="dark"] .page-intro {
@@ -872,6 +899,7 @@ body[data-theme="dark"] .case-study {
   border-radius: 999px;
   background: rgba(216, 167, 93, 0.1);
   color: var(--accent-strong);
+  font-family: var(--font-ui);
   font-weight: 600;
   border: 1px solid rgba(216, 167, 93, 0.2);
 }
@@ -1463,7 +1491,10 @@ body[data-theme="dark"] .mobile-nav {
   }
 
   .case-study__visual {
-    min-height: 220px;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    aspect-ratio: 4 / 3;
   }
 
   .image-slot,
@@ -1487,6 +1518,25 @@ body[data-theme="dark"] .mobile-nav {
 /* ================================
    Refined Interactive States
 ================================ */
+
+a {
+  font-family: var(--font-ui);
+}
+
+.button,
+.button-secondary,
+button {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.theme-toggle,
+.menu-toggle {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
 
 .button,
 .button-secondary {
