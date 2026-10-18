@@ -324,6 +324,10 @@ body[data-theme="dark"] .theme-toggle__thumb {
   position: relative;
 }
 
+#letter-hero{
+  letter-spacing: 1.15px;
+}
+
 body[data-theme="dark"] .hero {
   background:
     linear-gradient(135deg, rgba(13, 18, 23, 0.98), rgba(9, 13, 17, 0.94)),
