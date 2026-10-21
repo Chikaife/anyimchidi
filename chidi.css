@@ -7,8 +7,8 @@
   --text-strong: #0d1117;
   --muted: #566274;
   --border: rgba(17, 24, 39, 0.08);
-  --accent: #d8a15a;
-  --accent-soft: rgba(216, 161, 90, 0.14);
+  --accent: #0b0906;
+  --accent-soft: rgba(19, 14, 9, 0.14);
   --accent-strong: #121821;
   --shadow: 0 32px 80px rgba(14, 19, 25, 0.12);
   --shadow-soft: 0 18px 36px rgba(15, 22, 29, 0.08);
@@ -1381,6 +1381,7 @@ body[data-theme="dark"] .mobile-nav {
   padding: 12px 14px;
   border-radius: 12px;
   font-size: 0.8rem;
+  text-align: center;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1392,7 +1393,7 @@ body[data-theme="dark"] .mobile-nav {
 .mobile-nav a:hover,
 .mobile-nav a:focus-visible {
   background: rgba(211, 157, 79, 0.08);
-  border-color: rgba(211, 157, 79, 0.2);
+  border-color: rgba(13, 11, 7, 0.2);
 }
 
 /* ================================
@@ -1578,7 +1579,7 @@ button {
 .button:hover,
 .button:focus-visible {
   box-shadow:
-    0 18px 34px rgba(212, 158, 80, 0.3),
+    0 18px 34px rgba(18, 13, 5, 0.3),
     0 0 0 4px var(--accent-soft);
 }
 
@@ -1606,7 +1607,7 @@ button:not(.button):not(.button-secondary) {
 button:not(.button):not(.button-secondary):hover,
 button:not(.button):not(.button-secondary):focus-visible {
   transform: translateY(-2px);
-  border-color: rgba(216, 167, 93, 0.52);
+  border-color: rgba(14, 11, 6, 0.52);
   box-shadow:
     0 9px 22px rgba(17, 24, 39, 0.1),
     0 0 0 3px var(--accent-soft);
