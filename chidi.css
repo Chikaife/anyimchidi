@@ -640,9 +640,6 @@ body[data-theme="dark"] .project-card {
   display: inline-flex;
   align-items: center;
   padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.22);
   color: var(--text-strong);
   font-family: var(--font-ui);
   font-size: 0.76rem;
@@ -749,7 +746,6 @@ body[data-theme="dark"] .project-card {
 .quote-block {
   margin: 0;
   padding: 24px;
-  border-left: 4px solid var(--accent);
   border-radius: 15px;
   background: rgb(21, 24, 22);
   color: floralwhite;
@@ -2150,6 +2146,10 @@ body[data-theme="light"] .project-card {
   padding-left: 20px;
 }
 
+#experience li{
+  margin-bottom: 25about-spotlightpx;
+}
+
 .links-list {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
@@ -2274,8 +2274,6 @@ body[data-theme="dark"] .page-intro {
 }
 
 .about-spotlight span {
-  border-color: rgba(255, 255, 255, 0.17);
-  background: #171717;
   color: #ddd;
 }
 
@@ -2299,7 +2297,6 @@ body[data-theme="dark"] .page-intro {
 }
 
 .quote-block {
-  border-left-color: #bbb;
   border-radius: 0;
   background: #111;
   color: #eee;
