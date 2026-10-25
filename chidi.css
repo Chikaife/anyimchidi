@@ -238,9 +238,7 @@ body[data-theme="dark"] .brand img {
   font-variant-numeric: tabular-nums;
 }
 
-/* ================================
-   Theme Toggle
-================================ */
+
 
 .theme-toggle {
   display: inline-flex;
@@ -305,9 +303,7 @@ body[data-theme="dark"] .theme-toggle__thumb {
   font-weight: 600;
 }
 
-/* ================================
-   Hero
-================================ */
+
 
 .hero {
   display: grid;
@@ -326,7 +322,7 @@ body[data-theme="dark"] .theme-toggle__thumb {
 
 #letter-hero{
   letter-spacing: 1.15px;
-  /* font-size: 5rem; */
+
 }
 
 body[data-theme="dark"] .hero {
@@ -386,9 +382,7 @@ body[data-theme="dark"] .hero {
   transform: translateY(0);
 }
 
-/* ================================
-   Buttons
-================================ */
+
 
 .button,
 .button-secondary {
@@ -461,9 +455,7 @@ body[data-theme="dark"] .button-secondary {
   color: var(--accent-strong);
 }
 
-/* ================================
-   Panels and Sections
-================================ */
+
 
 .panel {
   margin-top: 24px;
@@ -494,9 +486,7 @@ body[data-theme="dark"] .panel {
   color: var(--text);
 }
 
-/* ================================
-   Projects
-================================ */
+
 
 .project-list {
   display: grid;
@@ -566,9 +556,7 @@ body[data-theme="dark"] .project-card {
   text-decoration: none;
 }
 
-/* ================================
-   About
-================================ */
+
 
 .about-grid {
   display: grid;
@@ -596,9 +584,7 @@ body[data-theme="dark"] .project-card {
   color: var(--text);
 }
 
-/* ================================
-   Standalone Pages
-================================ */
+
 
 .page-intro {
   display: grid;
@@ -759,7 +745,7 @@ body[data-theme="dark"] .project-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
+
 }
 
 .signal {
@@ -854,9 +840,7 @@ body[data-theme="dark"] .case-study {
   border-color: var(--border);
 }
 
-/* ================================
-   Skills
-================================ */
+
 
 .grid {
   display: grid;
@@ -896,39 +880,37 @@ body[data-theme="dark"] .case-study {
 }
 
 .skill-pill {
-  /* padding: 10px 14px; */
-  /* border-radius: 999px; */
-  /* background: rgba(216, 167, 93, 0.1); */
+
+
+
   color: var(--accent-strong);
   font-family: var(--font-display);
   font-weight: 600;
-  /* border: 1px solid rgba(216, 167, 93, 0.2); */
+
 }
 
-/* =============================
-    Work and Volunteering
-============================= */
+
 #nacos{
-  position: relative;     
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(12, 10, 10);               
+  color: rgb(12, 10, 10);
   font-weight: bold;
   overflow: hidden;
 }
 
 #nacos::before{
-  content: "";                
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;  
+  z-index: -1;
   background-image: url(/images/nacos.webp);
   background-position: center;
   background-repeat: no-repeat;
@@ -940,26 +922,26 @@ body[data-theme="dark"] .case-study {
 opacity: 0.3;
 }
 #aibanc{
-  position: relative;     
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(12, 10, 10);               
+  color: rgb(12, 10, 10);
   font-weight: bold;
   overflow: hidden;
 }
 
 #aibanc::before{
-  content: "";                
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;  
+  z-index: -1;
   background-image: url(/images/aibanc2.webp);
   background-position: center;
   background-repeat: no-repeat;
@@ -971,26 +953,26 @@ opacity: 0.3;
 opacity: 0.3;
 }
 #pleasant-land{
-  position: relative;     
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(12, 10, 10);               
+  color: rgb(12, 10, 10);
   font-weight: bold;
   overflow: hidden;
 }
 
 #pleasant-land::before{
-  content: "";                
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;  
+  z-index: -1;
   background-image: url(/images/pleasant-land.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -1003,9 +985,7 @@ opacity: 0.3;
 }
 
 
-/* ================================
-   Links
-================================ */
+
 #linkedin,
 #github,
 #chidi,
@@ -1024,7 +1004,7 @@ opacity: 0.3;
     isolation: isolate;
     border-radius: 20px;
   }
-  
+
 #linkedin::before,
 #github::before,
 #chidi::before,
@@ -1034,8 +1014,8 @@ opacity: 0.3;
     position: absolute;
     inset: 0;
     z-index: -1;
-    
-    
+
+
     background-position: center;
     background-repeat: no-repeat;
 
@@ -1129,7 +1109,7 @@ body[data-theme="dark"] .last-link a {
   box-shadow: 0 18px 32px rgba(0, 0, 0, 0.16);
 }
 
-/* Projects */
+
 #portfolio-website{
   background-image: url("images/anyimchidi-image.png");
   background-size: 100%;
@@ -1177,9 +1157,7 @@ body[data-theme="dark"] .last-link a {
   background-size: 105% 250px;
 }
 
-/* ================================
-   Contact Form
-================================ */
+
 
 .contact-form {
   display: grid;
@@ -1229,9 +1207,7 @@ body[data-theme="dark"] .contact-form textarea {
   margin: 0;
 }
 
-/* ================================
-   Footer
-================================ */
+
 
 footer {
   display: flex;
@@ -1261,9 +1237,7 @@ footer a:focus-visible {
   transform: scale(1.1);
 }
 
-/* ================================
-   Gallery
-================================ */
+
 
 .gallery-grid {
   display: inline-flex;
@@ -1287,9 +1261,7 @@ footer a:focus-visible {
   transform: scale(1.2);
 }
 
-/* ================================
-   Mobile Menu
-================================ */
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -1301,13 +1273,13 @@ footer a:focus-visible {
   width: 44px;
   height: 44px;
   border: none;
-  /* border-radius: 12px; */
+
   background: rgba(255, 255, 255, 0.06);
   color: var(--text);
   cursor: pointer;
   padding: 0;
   position: relative;
-  /* transition: transform 220ms ease, border-color 220ms ease, background-color 220ms ease; */
+
 }
 
 .menu-toggle:hover,
@@ -1392,9 +1364,7 @@ body[data-theme="dark"] .mobile-nav {
   border-color: rgba(13, 11, 7, 0.2);
 }
 
-/* ================================
-   Responsive
-================================ */
+
 
 @media (max-width: 960px) {
   .about-grid {
@@ -1517,9 +1487,7 @@ body[data-theme="dark"] .mobile-nav {
   }
 }
 
-/* ================================
-   Refined Interactive States
-================================ */
+
 
 a {
   font-family: var(--font-ui);
@@ -1692,9 +1660,7 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
-/* ================================
-   Reduced Motion
-================================ */
+
 
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -1703,7 +1669,7 @@ button:focus-visible {
   }
 }
 
-/* Dark editorial portfolio */
+
 :root {
   --bg: #080808;
   --bg-2: #080808;
@@ -2056,9 +2022,9 @@ body[data-theme="light"] .profile-box {
 
 .skill-pill {
   padding: 10px 16px;
-  /* border: 1px solid rgba(255, 255, 255, 0.17); */
-  /* border-radius: 999px; */
-  /* background: #e2dada; */
+
+
+
   color: #e5e5e5;
   font-size: 0.88rem;
   font-weight: 500;
