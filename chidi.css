@@ -2324,11 +2324,6 @@ body[data-theme="dark"] .case-study {
   color: #f1f1f1;
 }
 
-.case-study__meta li {
-  /* background: var(--accent); */
-  /* color: #dedede; */
-}
-
 @media (max-width: 760px) {
   .page-container {
     padding: 0 22px 40px;
