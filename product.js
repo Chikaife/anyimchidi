@@ -151,7 +151,7 @@ if (product) {
     discover.append("Discover the piece ");
     var arrow = document.createElement("span");
     arrow.setAttribute("aria-hidden", "true");
-    arrow.textContent = "→";
+    arrow.textContent = "";
     discover.appendChild(arrow);
 
     link.append(picture, name, meta, price, discover);
@@ -162,5 +162,5 @@ if (product) {
     '<section class="product-missing"><p class="eyebrow">AACEE · THE COLLECTION</p>' +
     '<h1>This piece is not in the collection.</h1>' +
     '<p>Explore the collection to find your next everyday essential.</p>' +
-    '<a class="btn" href="/shop">Discover the collection <span aria-hidden="true">→</span></a></section>';
+    '<a class="btn" href="/shop">Discover the collection</a></section>';
 }
