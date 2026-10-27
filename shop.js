@@ -95,7 +95,7 @@ window.AACEE_PRODUCTS = [
     price: "₦15,000",
     description: "An everyday essential that brings effortless style to any fit. Designed for comfort, versatility and a confident finish to your look.",
     colors: ["Black", "#800020", "Whitesmoke"],
-    sizes: ["One size"],
+    sizes: ["AACEE", "SPADE"],
     details: ["Black", "AACEE or SPADE ", "Adjustable"]
   },
   {
