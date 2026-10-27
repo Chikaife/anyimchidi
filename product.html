@@ -16,22 +16,39 @@
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <a class="mark" href="/shop" aria-label="AACEE shop home">
-      <img class="header-img" src="/shop/logo-white-shop.png" alt="AACEE · anyimchidi.com">
-    </a>
-  </header>
+<header class="shop-header">
+  <a class="header-contact black-bg" href="/shop#contact"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus preview-icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg><span class="black-bg"> Contact </span></a>
+  <div class="brand-stack">
+    <a class="mark aacee " href="/shop" aria-label="AACEE shop home"><img class="mobile-header-img" src="/shop/aacee_logo.png" alt=""><span class="desktop-wordmark"> ― AACEE —</span></a>
+    <p id="clock" aria-live="polite" aria-label="Current time"></p>
+  </div>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation menu">
+    <span class="menu-label"></span>
+    <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+  </button>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Shop navigation">
+    <a class="mobile-contact" href="/shop#contact">Contact</a>
+    <a href="/shop#collection">View the collection </a>
+    <a href="/product?item=bucket-hat">Bucket hat </a>
+    <a href="/product?item=baseball-cap">Baseball cap</a>
+    <a href="/product?item=polo-regular-fit">Polo (Regular Fit) </a>
+    <a href="/product?item=muscle-tank">Muscle tank </a>
+    <a href="/product?item=gym-shorts">Gym shorts </a>
+    <a href="/product?item=hoodie">Hoodie </a>
+    <a href="/shop#order">Place an order </a>
+  </nav>
+</header>
 
-  <main class="product-page" id="productPage">
+  <main class="product-page scroll-item" id="productPage">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
       <a href="/shop">Shop</a>
       <span aria-hidden="true">/</span>
       <span id="breadcrumbName">The collection</span>
     </nav>
 
-    <section class="product-layout" aria-labelledby="productName">
+    <section class="product-layout scroll-item" aria-labelledby="productName">
       <div class="product-gallery">
-        <div class="product-stage" id="productStage">
+        <div class="product-stage scroll-item" id="productStage">
           <img id="productImage" src="" alt="">
           <div class="gallery-placeholder" id="galleryPlaceholder" hidden>
             <span class="placeholder-wordmark">AACEE <span>STUDIO</span></span>
@@ -40,20 +57,20 @@
           </div>
           <span class="stage-caption">AACEE · THE ESSENTIALS</span>
         </div>
-        <div class="gallery-views" aria-label="Product views">
-          <button class="gallery-view is-active" type="button" data-view="front" aria-pressed="true">
-            <span class="view-image"></span>
+        <div class="gallery-views scroll-item" aria-label="Product views">
+          <button class="gallery-view is-active scroll-item" type="button" data-view="front" aria-pressed="true">
+            <span class="view-image scroll-item"></span>
             <span>Front view</span>
           </button>
-          <button class="gallery-view" type="button" data-view="back" aria-pressed="false">
-            <span class="view-image"></span>
+          <button class="gallery-view scroll-item" type="button" data-view="back" aria-pressed="false">
+            <span class="view-image scroll-item"></span>
             <span>Back view</span>
           </button>
         </div>
       </div>
 
       <div class="product-info" id="productInfo">
-        <p class="eyebrow">AACEE . MERCH</p>
+        <p class="eyebrow scroll-item">AACEE . MERCH</p>
         <h1 id="productName"></h1>
         <p class="product-meta" id="productMeta"></p>
         <p class="product-price" id="productPrice"></p>
@@ -76,9 +93,8 @@
         </div>
 
         <a class="btn product-order" id="orderLink" href="/shop#order">Order this piece</a>
-        <p class="order-note">Your order is confirmed personally before payment.</p>
 
-        <div class="product-details">
+        <div class="product-details scroll-item">
           <h2>Considered details</h2>
           <ul id="productDetails"></ul>
         </div>
@@ -90,19 +106,19 @@
     </section>
 
     <section class="related collection" aria-labelledby="relatedHeading">
-      <div class="related-heading">
+      <div class="related-heading scroll-item">
         <div>
-          <p class="eyebrow">MORE TO EXPLORE</p>
+          <p class="eyebrow scroll-item">MORE TO EXPLORE</p>
           <h2 id="relatedHeading">Complete the look.</h2>
         </div>
-        <a class="text-link" href="/shop#collection">View all pieces</a>
+        <a class="text-link scroll-item" href="/shop#collection">View all pieces</a>
       </div>
-      <div class="items" id="relatedProducts"></div>
+      <div class="items scroll-item" id="relatedProducts"></div>
     </section>
   </main>
 
   <footer>
-    <span>© anyimchidi.com</span>
+    <span>© anyimchidi.com/shop · 2026</span>
     <span><a href="mailto:merch@anyimchidi.com" target="_blank" rel="noopener noreferrer">Email</a></span>
   </footer>
 </div>

@@ -39,68 +39,86 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shop-style.css">
-<script src="shop.js?v=3" defer></script>
+<link rel="stylesheet" href="shop-style.css?v=4">
+<script src="shop.js?v=4" defer></script>
 </head>
 <body>
 
 <div class="wrap">
-<header>
-<a class="mark" href="/shop"><img class="header-img" src="/shop/logo-white-shop.png" alt="AACEE · anyimchidi.com"></a>
-<!-- <a href="https://anyimchidi.com/">Back to portfolio</a> -->
+<header class="shop-header">
+  <a class="header-contact black-bg" href="#contact"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus preview-icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg><span class="black-bg"> Contact </span></a>
+  <div class="brand-stack">
+    <a class="mark aacee " href="/shop" aria-label="AACEE shop home"><img class="mobile-header-img" src="/shop/aacee_logo.png" alt=""><span class="desktop-wordmark"> ― AACEE —</span></a>
+    <p id="clock" aria-live="polite" aria-label="Current time"></p>
+  </div>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation menu">
+    <span class="menu-label"></span>
+    <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+  </button>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Shop navigation">
+    <a class="mobile-contact" href="#contact">Contact</a>
+    <a href="#collection">View the collection </a>
+    <a href="/product?item=bucket-hat">Bucket hat </a>
+    <a href="/product?item=baseball-cap">Baseball cap</a>
+    <a href="/product?item=polo-regular-fit">Polo (Regular Fit) </a>
+    <a href="/product?item=muscle-tank">Muscle tank </a>
+    <a href="/product?item=gym-shorts">Gym shorts </a>
+    <a href="/product?item=hoodie">Hoodie </a>
+    <a href="#order">Place an order </a>
+  </nav>
 </header>
 
-<section class="hero">
-<div class="hero-copy">
+<section class="hero scroll-item">
+<div class="hero-copy scroll-item">
 <h1>AACEE YOUR GAME!</h1>
 <p>A fashion collection designed to give you effortless swag. <br>AACEE your Game with clean designs and everyday style that speaks for itself.</p>
 <a class="btn" href="#order">Place an order</a>
 </div>
-<div class="hero-visual">
+<div class="hero-visual scroll-item">
 <img src="/shop/hoodie.jpg" alt="AACEE hoodie">
 </div>
 </section>
 
-<section class="collection" id="collection">
+<section class="collection scroll-item" id="collection">
 <h2>Available now</h2>
 <p class="sub">AACEE your Game · Effortless Swag. <br>Shop the collection and find your next favourite look.</p>
-<div class="items">
-<a class="item" href="/product?item=bucket-hat" aria-label="Discover Bucket hat">
+<div class="items scroll-item">
+<a class="item scroll-item" href="/product?item=bucket-hat" aria-label="Discover Bucket hat">
 <div class="pic dark"><img src="/shop/bucket hat.jpg" alt="Black bucket hat with white AACEE logo"></div>
 <h3>Bucket hat</h3>
-<p class="meta">Black, white</p>
+<p class="meta">Black, whitesmoke</p>
 <p class="price">₦16,000</p>
 <span class="discover">Discover the piece</span>
 </a>
-<a class="item" href="/product?item=baseball-cap" aria-label="Discover Baseball Cap">
+<a class="item scroll-item" href="/product?item=baseball-cap" aria-label="Discover Baseball Cap">
 <div class="pic dark"><img src="/shop/face cap.jpg" alt="Black baseball cap with white AACEE logo"></div>
 <h3>Baseball Cap</h3>
 <p class="meta">Black</p>
 <p class="price">₦15,000</p>
 <span class="discover">Discover the piece</span>
 </a>
-<a class="item" href="/product?item=polo-regular-fit" aria-label="Discover Polo (Regular Fit)">
+<a class="item scroll-item" href="/product?item=polo-regular-fit" aria-label="Discover Polo (Regular Fit)">
 <div class="pic"><img src="/shop/regular_polo.jpg" alt="AACEE regular-fit polo"></div>
 <h3>Polo (Regular Fit)</h3>
 <p class="meta">White or black · M–XXL</p>
 <p class="price">₦25,500</p>
 <span class="discover">Discover the piece</span>
 </a>
-<a class="item" href="/product?item=muscle-tank" aria-label="Discover Muscle Tank">
+<a class="item scroll-item" href="/product?item=muscle-tank" aria-label="Discover Muscle Tank">
 <div class="pic"><img src="/shop/Muscle tank.jpg" alt="AACEE muscle tank"></div>
 <h3>Muscle Tank</h3>
 <p class="meta">black · M–XXL</p>
 <p class="price">₦13,500</p>
 <span class="discover">Discover the piece</span>
 </a>
-<a class="item" href="/product?item=gym-shorts" aria-label="Discover Gym Shorts">
+<a class="item scroll-item" href="/product?item=gym-shorts" aria-label="Discover Gym Shorts">
 <div class="pic dark"><img src="/shop/GYM SHORTS.jpg" alt="AACEE gym shorts"> </div>
 <h3>Gym Shorts</h3>
 <p class="meta">Black · Standard</p>
 <p class="price">₦17,500</p>
 <span class="discover">Discover the piece</span>
 </a>
-<a class="item" href="/product?item=hoodie" aria-label="Discover Hoodie">
+<a class="item scroll-item" href="/product?item=hoodie" aria-label="Discover Hoodie">
 <div class="pic dark"><img src="/shop/hoodie.jpg" alt="AACEE hoodie"> </div>
 <h3>Hoodie</h3>
 <p class="meta">White or black · M–XXL</p>
@@ -110,20 +128,20 @@
 </div>
 </section>
 
-<section class="order" id="order">
-<div class="cols">
+<section class="order scroll-item" id="order">
+<div class="cols scroll-item">
 <div>
 <h2>How ordering works</h2>
 <p class="sub">Four steps, no account needed.</p>
 <ol class="steps">
-<li><strong>Fill in the form.</strong> It opens a ready-written WhatsApp message to me.</li>
-<li><strong>I confirm</strong> availability, the total, and delivery cost.</li>
-<li><strong>You pay</strong> using the payment link I send.</li>
-<li><strong>I make and deliver it.</strong> You get a message when it's on the way.</li>
+<li><strong>Fill in the form.</strong> It opens a ready-written WhatsApp message to our sales team.</li>
+<li><strong>We confirm</strong> availability, the total, and delivery cost.</li>
+<li><strong>You pay</strong> using the payment link sent to you.</li>
+<li><strong>We deliver it.</strong> You get a message when it's on the way.</li>
 </ol>
 </div>
 
-<form id="orderForm">
+<form id="orderForm" class="scroll-item">
 <label>Name
 <input name="name" required autocomplete="name">
 </label>
@@ -162,9 +180,30 @@
 </div>
 </section>
 
+<section id="contact" class="scroll-item">
+    <h2 class="section-title scroll-item">Email Us</h2>
+    <p class="form-note">Please provide the following information. Your inquiry will receive a response from a Client Advisor</p>
+    <form id="contactForm" class="scroll-item" action="https://formspree.io/f/xzdljooe" method="POST">
+        <label>
+            Name
+            <input type="text" id="name" name = "Name" placeholder="Your name" required>
+        </label>
+        <label>
+        Email
+<input type="email" id="email" name = "Email" placeholder="you@example.com" required>
+    </label>
+    <label>
+        Message
+        <textarea id="message" name = "Message" placeholder="Tell me about your project" required></textarea>
+    </label>
+    <button type="submit" class="btn">Send Message</button>
+    <p id="formStatus" class="form-note" aria-live="polite"></p>
+</form> </section>
+
+
 <footer>
-<span>© anyimchidi.com/shop · 2026</span>
-<span><a href="mailto:merch@anyimchidi.com" target="_blank" rel="noopener noreferrer">Email</a></span>
+<span class="scroll-item">© anyimchidi.com/shop · 2026</span>
+<span class="scroll-item"><a href="mailto:merch@anyimchidi.com" target="_blank" rel="noopener noreferrer">Email</a></span>
 <!-- <a href="https://anyimchidi.com/" target="_blank" rel="noopener noreferrer">Portfolio</a> -->
 </footer>
 </div>
