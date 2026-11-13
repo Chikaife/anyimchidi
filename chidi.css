@@ -462,7 +462,7 @@ body[data-theme="dark"] .button-secondary {
   padding: 32px;
   border-radius: var(--radius-lg);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(249, 245, 239, 0.78));
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   box-shadow: 0 18px 38px rgba(17, 24, 39, 0.06);
 }
 
@@ -998,8 +998,9 @@ opacity: 0.3;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
-    color: rgb(12, 10, 10);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: rgb(110, 19, 19);
     overflow: hidden;
     isolation: isolate;
     border-radius: 20px;
@@ -1098,7 +1099,6 @@ body[data-theme="dark"] #cv-download2 {
 body[data-theme="dark"] .links-list a,
 body[data-theme="dark"] .last-link a {
   background: linear-gradient(180deg, rgba(16, 20, 25, 0.96), rgba(12, 16, 19, 0.9));
-  color: var(--accent-strong);
 }
 
 .links-list a:hover,
@@ -1935,7 +1935,7 @@ body[data-theme="light"] .panel {
   margin-top: 0;
   padding: clamp(64px, 8vw, 112px) 0;
   border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.13);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.13); */
   border-radius: 0;
   background: transparent;
   box-shadow: none;
@@ -2010,7 +2010,7 @@ body[data-theme="light"] .profile-box {
 
 #skills .grid > div {
   padding: 22px 0;
-  border-block: 1px solid rgba(255, 255, 255, 0.13);
+  /* border-block: 1px solid rgba(255, 255, 255, 0.13); */
 }
 
 #skills .grid h3 {
@@ -2121,6 +2121,173 @@ body[data-theme="light"] .project-card {
   gap: 14px;
 }
 
+#contact{
+  width: fit-content;
+}
+
+.contact-center{
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+  letter-spacing: 1.5px;
+}
+
+.button-center{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-center2 li{
+  margin-top: 50px;
+}
+
+.links-txt{
+  /* color: red; */
+  /* font-style: italic; */
+  font-weight: bold;
+
+}
+
+#contact h2{
+  text-align: center;
+}
+
+.lux-button-text{
+  letter-spacing: 4px;
+}
+
+
+.lux-button {
+    --accent: #1d1d1f;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 25px;
+    overflow: hidden;
+    isolation: isolate;
+
+    color: #fff;
+    background: linear-gradient(
+        135deg,
+        #080809 0%,
+        #000008 48%,
+        #151515 100%
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 12px;
+
+    font: 600 15px/1.2 inherit;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+
+    box-shadow:
+        0 5px 12px rgba(40, 40, 42, 0.2),
+        0 12px 30px rgba(45, 44, 50, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+
+    transition:
+        transform 350ms cubic-bezier(.2,.8,.2,1),
+        box-shadow 350ms ease,
+        filter 350ms ease;
+}
+
+
+.lux-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+        110deg,
+        transparent 20%,
+        rgba(255,255,255,.35) 45%,
+        transparent 70%
+    );
+    transform: translateX(-130%);
+    transition: transform 700ms cubic-bezier(.2,.8,.2,1);
+}
+
+.lux-button::after {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    z-index: -2;
+    border-radius: inherit;
+    background: linear-gradient(
+        135deg,
+        #040405,
+        #03030d,
+        #05000e
+    );
+    filter: blur(16px);
+    opacity: 0;
+    transition: opacity 350ms ease;
+}
+
+.lux-button-icon {
+    display: inline-block;
+    font-size: 19px;
+    line-height: 1;
+    transition: transform 350ms cubic-bezier(.2,.8,.2,1);
+}
+
+.lux-button:hover {
+    transform: translateY(-4px) scale(1.025);
+    filter: saturate(1.2) brightness(1.08);
+
+    box-shadow:
+        0 8px 18px rgba(51, 51, 53, 0.3),
+        0 20px 45px rgba(176, 176, 182, 0.35),
+        inset 0 1px 0 rgba(255,255,255,.4);
+}
+
+.lux-button:hover::before {
+    transform: translateX(130%);
+}
+
+.lux-button:hover::after {
+    opacity: .8;
+}
+
+.lux-button:hover .lux-button-icon {
+    transform: translate(4px, -4px);
+}
+
+
+.lux-button:active {
+    transform: translateY(-1px) scale(.98);
+    box-shadow:
+        0 3px 8px rgba(79, 70, 229, .2),
+        inset 0 2px 5px rgba(0,0,0,.15);
+}
+
+.lux-button:focus-visible {
+    outline: 3px solid #0c0c0d;
+    outline-offset: 5px;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .lux-button,
+    .lux-button::before,
+    .lux-button::after,
+    .lux-button-icon {
+        transition: none;
+    }
+}
+
+
+.master-mindset{
+  /* text-align: center; */
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
 .links-list a,
 .last-link a,
 body[data-theme="dark"] .links-list a,
@@ -2148,6 +2315,7 @@ body[data-theme="light"] .last-link a {
 .last-link a:focus-visible {
   border-color: rgba(255, 255, 255, 0.38);
   box-shadow: none;
+  /* color: red; */
 }
 
 .last-link {
