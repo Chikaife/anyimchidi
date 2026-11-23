@@ -499,7 +499,6 @@ body[data-theme="dark"] .panel {
   padding: 24px;
   border-radius: var(--radius-md);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(247, 241, 234, 0.86));
-  border: solid;
   box-shadow: 0 12px 28px rgba(17, 24, 39, 0.06);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -2034,8 +2033,6 @@ body[data-theme="light"] .profile-box {
 .project-card,
 body[data-theme="dark"] .project-card,
 body[data-theme="light"] .project-card {
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  border-radius: 12px;
   background-color: #111;
   box-shadow: none;
 }
